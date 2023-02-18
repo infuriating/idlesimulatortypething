@@ -7,6 +7,7 @@ const saveState = {
     {
       name: "Help yourself",
       cost: 10,
+      costIncreaser: 1.2,
       amount: 0,
       addCash: 1,
       multiplier: 0,
@@ -16,6 +17,7 @@ const saveState = {
     {
       name: "Faster!",
       cost: 100,
+      costIncreaser: 1.2,
       amount: 0,
       addCash: 0,
       multiplier: 0.1,
@@ -25,11 +27,12 @@ const saveState = {
     {
       name: "Multiply the Multiplier",
       cost: 1000,
+      costIncreaser: 1.5,
       amount: 0,
       addCash: 0,
       multiplier: 0,
       multiply: 1.2,
-      description: "Increase the multiplier by 20% per upgrade",
+      description: "Multiplies the multiplier by 20% per upgrade",
     },
   ],
 };
