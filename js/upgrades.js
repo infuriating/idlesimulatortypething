@@ -17,6 +17,7 @@ function buyUpgrade(upgrade) {
     saveState.upgrades[upgrade].cost *= 1.15;
     saveState.addCash += saveState.upgrades[upgrade].addCash;
     saveState.cashMultiplier += saveState.upgrades[upgrade].multiplier;
+    saveState.cashMultiplier *= saveState.upgrades[upgrade].multiply;
     document.getElementsByClassName("upgrade-cost")[
       upgrade
     ].innerHTML = `Cost: ${saveState.upgrades[upgrade].cost.toFixed(1)}`;

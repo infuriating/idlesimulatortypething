@@ -9,6 +9,7 @@ const saveState = {
       amount: 0,
       addCash: 1,
       multiplier: 0,
+      multiply: 0,
       description: "Add a extra dollar per second",
     },
     {
@@ -17,16 +18,18 @@ const saveState = {
       amount: 0,
       addCash: 0,
       multiplier: 0.1,
+      multiply: 0,
       description: "Add 0.1$ to the multiplier",
     },
-    // {
-    //   name: "aaa",
-    //   cost: 10,
-    //   amount: 0,
-    //   addCash: 1,
-    //   multiplier: 0,
-    //   description: "Add a extra dollar per second",
-    // },
+    {
+      name: "Multiply the Multiplier",
+      cost: 1000,
+      amount: 0,
+      addCash: 0,
+      multiplier: 0,
+      multiply: 1.2,
+      description: "Increase the multiplier by 20% per upgrade",
+    },
   ],
 };
 
