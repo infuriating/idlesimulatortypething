@@ -14,7 +14,7 @@ function buyUpgrade(upgrade) {
   if (saveState.cash >= saveState.upgrades[upgrade].cost) {
     saveState.cash -= saveState.upgrades[upgrade].cost;
     saveState.upgrades[upgrade].amount++;
-    saveState.upgrades[upgrade].cost *= 1.15;
+    saveState.upgrades[upgrade].cost *= 1.2;
     saveState.addCash += saveState.upgrades[upgrade].addCash;
     saveState.cashMultiplier += saveState.upgrades[upgrade].multiplier;
     saveState.cashMultiplier *= saveState.upgrades[upgrade].multiply;
