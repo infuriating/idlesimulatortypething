@@ -1,0 +1,32 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 75px;
+  background-color: #1d1d1d;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 65% 1fr;
+}
+
+.container {
+  height: 90%;
+}
+
+.container__left {
+  border-right: 5px solid white;
+  display: grid;
+  place-items: center;
+}
+
+.upgrade {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin: 15px;
+}
