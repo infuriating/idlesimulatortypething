@@ -15,9 +15,20 @@
         alt="loading"
       />
     </div>
+    <div id="reset_modal_backdrop"></div>
+    <div id="reset_modal">
+      <div id="reset_modal_content">
+        <h3>Are you sure you want to reset your data?</h3>
+        <div id="reset_modal_buttons">
+          <button onclick="resetData()">Yes</button>
+          <button onclick="resetDataModalClose()">No</button>
+        </div>
+      </div>
+    </div>
     <div id="app">
       <div id="header">
         <h1>gain money lol</h1>
+        <h4>best idle game ever (real)</h4>
         <h3>u make extra every second !!</h3>
       </div>
       <div class="container grid">
@@ -28,15 +39,9 @@
           </div>
         </div>
         <div class="container__right">
-          <div id="upgrades">
-            <!-- <div id="upgrade1" class="upgrade">
-              <button id="upgrade1_button" onclick="buyUpgrade('addCash')">
-                upgrade 1
-              </button>
-              <p id="upgrade1_cost"></p>
-              <p id="upgrade1_amount"></p>
-              <p id="upgrade1_desc"></p>
-            </div> -->
+          <div id="upgrades"></div>
+          <div id="reset">
+            <button onclick="resetDataModalShow()">Reset your Data</button>
           </div>
         </div>
       </div>
@@ -44,5 +49,6 @@
     <script src="js/onLoad.js"></script>
     <script src="js/cashCounter.js"></script>
     <script src="js/upgrades.js"></script>
+    <script src="js/resetData.js"></script>
   </body>
 </html>
