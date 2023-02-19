@@ -179,6 +179,7 @@ h3 {
   font-size: 1.125rem;
   animation: clickerPopup 1.5s linear;
   text-shadow: 0px 0px 3px, 0px 0px 12px rgba(173, 255, 47, 0.4);
+  pointer-events: none;
 }
 
 @keyframes clickerPopup {
