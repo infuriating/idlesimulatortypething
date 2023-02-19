@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  height: 75px;
+  height: 70px;
   background-color: #192841;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
 }
@@ -29,7 +29,7 @@
 }
 
 .container {
-  height: 90%;
+  height: 92.5vh;
 }
 
 .container__left {
@@ -39,8 +39,9 @@
 }
 
 .container__right {
+  height: 95vh;
   display: grid;
-  grid-template-rows: 80% 1fr;
+  grid-template-rows: 75% 1fr;
 }
 
 #reset {

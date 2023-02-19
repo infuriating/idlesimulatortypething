@@ -12,16 +12,6 @@ for (let i = 0; i < saveState.upgrades.length; i++) {
     `;
 }
 
-// setInterval(() => {
-//   if (saveState.upgrades[upgrade].cost > saveState.cash) {
-//     document.getElementsByClassName("upgrade").style.backgroundColor = "#000";
-//     document.getElementsByClassName("upgrade__cost").style.color = "red";
-//     document.getElementsByClassName("upgrade__button").style.opacity = "0.5";
-//     document.getElementsByClassName("upgrade__button").style.cursor =
-//       "not-allowed";
-//   }
-// }, 50);
-
 function buyUpgrade(upgrade) {
   if (saveState.cash >= saveState.upgrades[upgrade].cost) {
     saveState.cash -= saveState.upgrades[upgrade].cost;
