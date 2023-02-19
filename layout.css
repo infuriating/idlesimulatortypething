@@ -33,6 +33,7 @@
 }
 
 .container__left {
+  position: relative;
   border-right: 5px solid white;
   display: grid;
   place-items: center;

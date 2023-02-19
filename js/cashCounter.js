@@ -24,8 +24,10 @@ function cashCounter() {
 
 setInterval(() => {
   saveState.cash += saveState.addCash;
-  saveState.addCash += saveState.cashMultiplier * saveState.multiply;
-  saveState.totalCash += saveState.cashMultiplier * saveState.multiply;
+  saveState.addCash +=
+    saveState.cashMultiplier * saveState.multiply * criticalHit;
+  saveState.totalCash +=
+    saveState.cashMultiplier * saveState.multiply * criticalHit;
   cashCounter();
   // upgradeChecker();
 }, 1000);
