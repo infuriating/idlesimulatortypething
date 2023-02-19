@@ -46,7 +46,9 @@
 
 #reset {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  background-color: #1d1d1d;
+  background: linear-gradient(#252525, black);
 }

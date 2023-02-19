@@ -5,15 +5,16 @@ for (let i = 0; i < saveState.upgrades.length; i++) {
         <div class="upgrade__description">${saveState.upgrades[i].description}</div>
         <div class="upgrade__details">
         <div class="upgrade__cost">Cost: ${saveState.upgrades[i].cost}</div>
-        <div class="upgrade__amount">Amount: ${saveState.upgrades[i].amount}</div>
+        <div class="upgrade__amount">Amount: ${saveState.upgrades[i].amount}/${saveState.upgrades[i].max}</div>
         </div>
-        <button class="upgrade__button" onclick="buyUpgrade(${i})">Upgrade</button>
+        <button class="upgrade__button" id="upgradebutton${i}" onclick="buyUpgrade(${i})">Upgrade</button>
         </div>
     `;
 }
 
 function buyUpgrade(upgrade) {
   if (saveState.cash >= saveState.upgrades[upgrade].cost) {
+    saveState.upgradeTotalAmount++;
     saveState.cash -= saveState.upgrades[upgrade].cost;
     saveState.upgrades[upgrade].amount++;
     saveState.upgrades[upgrade].cost *=
@@ -26,6 +27,11 @@ function buyUpgrade(upgrade) {
     ].innerHTML = `Cost: ${saveState.upgrades[upgrade].cost.toFixed(1)}`;
     document.getElementsByClassName("upgrade__amount")[
       upgrade
-    ].innerHTML = `Amount: ${saveState.upgrades[upgrade].amount}`;
+    ].innerHTML = `Amount: ${saveState.upgrades[upgrade].amount}/${saveState.upgrades[upgrade].max}`;
+  }
+  if (saveState.upgrades[upgrade].max <= saveState.upgrades[upgrade].amount) {
+    document.querySelectorAll(".upgrade__button")[upgrade].disabled = true;
+    document.querySelectorAll(".upgrade__button")[upgrade].innerHTML =
+      "Maxed out!";
   }
 }
