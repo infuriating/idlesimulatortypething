@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gain money lol - testing</title>
   </head>
-  <body onload="loadData()">
+  <body onload="loadData(), loadUpgrades()">
     <div id="loading">
       <img
         src="https://samherbert.net/svg-loaders/svg-loaders/oval.svg"
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="container__right">
-          <div id="upgrades" onload="buyUpgrade()"></div>
+          <div id="upgrades"></div>
           <div id="reset">
             <button onclick="resetData('modalOpen')">Reset your Data</button>
             <button onclick="money()">money(testing purposes)</button>
@@ -60,5 +60,6 @@
     <script src="js/cashCounter.js"></script>
     <script src="js/upgrades.js"></script>
     <script src="js/resetData.js"></script>
+    <script src="js/troubleshooting.js"></script>
   </body>
 </html>

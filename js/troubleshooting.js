@@ -4,8 +4,6 @@
 // fuck around and break the game for me thx xoxo
 
 function money() {
-  saveState.cash += 2500;
-  document.getElementById("cash_updater").innerHTML = `${saveState.cash.toFixed(
-    1
-  )}`;
+  saveState.cash += 500;
+  cashCounter();
 }
