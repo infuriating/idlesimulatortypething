@@ -26,4 +26,5 @@ setInterval(() => {
   saveState.cash += saveState.addCash;
   saveState.addCash += saveState.cashMultiplier * saveState.multiply;
   cashCounter();
+  // upgradeChecker();
 }, 1000);
