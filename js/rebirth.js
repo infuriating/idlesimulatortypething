@@ -1,10 +1,10 @@
 function rebirth(rebirth) {
-  let modalh1 = document.getElementById("rebirth_modal_content_h1");
-  let modalh3 = document.getElementById("rebirth_modal_content_h3");
-  let modalh4 = document.getElementById("rebirth_modal_content_h4");
-  let rebirthConfirmation = document.getElementById(
-    "rebirth_modal_confirmation"
-  );
+  let modalh1 = document.getElementById("rebirth_modal_content_h1"),
+    modalh3 = document.getElementById("rebirth_modal_content_h3"),
+    modalh4 = document.getElementById("rebirth_modal_content_h4"),
+    rebirthEmphasis = document.getElementById("rebirth_yellow"),
+    rebirthRender = document.getElementById("rebirth_updater"),
+    rebirthConfirmation = document.getElementById("rebirth_modal_confirmation");
 
   switch (rebirth) {
     case "modalOpen":
@@ -39,8 +39,15 @@ function rebirth(rebirth) {
     modalh1.innerHTML = "First Rebirth";
   } else if (saveState.rebirths == 1) {
     modalh1.innerHTML = "Second Rebirth";
+    rebirthEmphasis.innerHTML = "One";
+    rebirthRender.innerHTML = " Rebirth";
   } else if (saveState.rebirths == 2) {
     modalh1.innerHTML = "Third Rebirth";
+    rebirthEmphasis.innerHTML = "Two";
+    rebirthRender.innerHTML = " Rebirths";
+  } else if (saveState.rebirths == 3) {
+    rebirthEmphasis.innerHTML = "Three";
+    rebirthRender.innerHTML = " Rebirths";
   }
   if (saveState.rebirths == 0 && saveState.cash > 1000000) {
     modalh3.innerHTML =
@@ -79,3 +86,7 @@ function rebirth(rebirth) {
     }
   }
 }
+
+setTimeout(() => {
+  rebirth();
+}, 1000);

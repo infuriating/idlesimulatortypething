@@ -29,5 +29,4 @@ setInterval(() => {
   saveState.totalCash +=
     saveState.cashMultiplier * saveState.multiply * criticalHit;
   cashCounter();
-  // upgradeChecker();
 }, 1000);
