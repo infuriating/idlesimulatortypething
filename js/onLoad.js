@@ -8,7 +8,7 @@ const saveState = {
   upgradeTotalAmount: 0,
   upgrades: [
     {
-      max: 10,
+      max: 50,
       name: "Help yourself",
       cost: 10,
       costIncreaser: 1.3,
@@ -16,7 +16,7 @@ const saveState = {
       addCash: 1,
       multiplier: 0,
       multiply: 1,
-      description: "Add a extra dollar per second",
+      description: "Adds a extra dollar per second",
     },
     {
       max: 25,
@@ -27,7 +27,41 @@ const saveState = {
       addCash: 0,
       multiplier: 0.1,
       multiply: 1,
-      description: "Add 0.1$ to the generator",
+      description: "Adds 0.1$ to the generator",
+    },
+    {
+      max: 15,
+      name: "More money, less problems",
+      cost: 750,
+      costIncreaser: 1.25,
+      amount: 0,
+      addCash: 5,
+      multiplier: 0,
+      multiply: 1,
+      description: "Adds 5$ per second",
+    },
+    {
+      max: 20,
+      name: "Multiply the Multiplier",
+      cost: 2000,
+      costIncreaser: 1.55,
+      amount: 0,
+      addCash: 0,
+      multiplier: 0,
+      multiply: 1.3,
+      description: "Adds 30% to the multiplier per upgrade",
+    },
+    {
+      max: 10,
+      name: "Helpful.. I guess?",
+      cost: 1500,
+      costIncreaser: 2,
+      amount: 0,
+      addCash: 0,
+      multiplier: 0,
+      multiply: 2,
+      description:
+        "Adds 100% to the multiplier per upgrade but has a major price increase",
     },
   ],
 };
@@ -51,7 +85,7 @@ function loadData() {
   }
 }
 
-function loadUpgrades() {
+function loadUpgrades(upgrade) {
   document.getElementById("upgrades").innerHTML += `
         <div class="upgrade">
         <div class="upgrade__details">
