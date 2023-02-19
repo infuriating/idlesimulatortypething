@@ -11,6 +11,7 @@ const saveState = {
     {
       max: 50,
       name: "Help yourself",
+      baseCost: 10,
       cost: 10,
       costIncreaser: 1.25,
       amount: 0,
@@ -22,6 +23,7 @@ const saveState = {
     {
       max: 25,
       name: "MORE! MORE! MORE!",
+      baseCost: 100,
       cost: 100,
       costIncreaser: 1.2,
       amount: 0,
@@ -33,6 +35,7 @@ const saveState = {
     {
       max: 15,
       name: "More money, less problems",
+      baseCost: 750,
       cost: 750,
       costIncreaser: 1.25,
       amount: 0,
@@ -44,6 +47,7 @@ const saveState = {
     {
       max: 20,
       name: "Multiply the Multiplier",
+      baseCost: 2500,
       cost: 2500,
       costIncreaser: 1.55,
       amount: 0,
@@ -55,6 +59,7 @@ const saveState = {
     {
       max: 25,
       name: "Mr Burns' Money Machine",
+      baseCost: 7500,
       cost: 7500,
       costIncreaser: 1.4,
       amount: 0,
@@ -66,6 +71,7 @@ const saveState = {
     {
       max: 10,
       name: "Helpful.. I guess?",
+      baseCost: 20000,
       cost: 20000,
       costIncreaser: 2,
       amount: 0,

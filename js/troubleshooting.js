@@ -4,6 +4,6 @@
 // fuck around and break the game for me thx xoxo
 
 function money() {
-  saveState.cash += 500;
+  saveState.cash += 10000000;
   cashCounter();
 }

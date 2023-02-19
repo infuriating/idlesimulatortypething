@@ -23,12 +23,16 @@ function rebirth(rebirth) {
       saveState.addCash = 0.5;
       saveState.cashMultiplier = 0.05;
       saveState.multiply = 1;
-      localStorage.removeItem("upgrades");
+      // reset upgrades cost and amount in localstorage
+      for (let i = 0; i < saveState.upgrades.length; i++) {
+        saveState.upgrades[i].cost = saveState.upgrades[i].baseCost;
+        saveState.upgrades[i].amount = 0;
+      }
       // + one rebirth
       saveState.rebirths += 1;
       setInterval(() => {
         location.reload();
-      }, 1000);
+      }, 1500);
       break;
   }
   if (saveState.rebirths == 0) {
