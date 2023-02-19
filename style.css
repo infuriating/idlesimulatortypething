@@ -117,6 +117,17 @@ h3 {
   font-weight: 600;
 }
 
+#rebirthing {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1000;
+}
+
 #reset_modal,
 #rebirth_modal,
 #modal_backdrop {
@@ -141,8 +152,8 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 300px;
+  width: 40rem;
+  height: 25rem;
   background-color: #1d1d1d;
   z-index: 1000;
   border-radius: 10px;
@@ -154,6 +165,8 @@ h3 {
 #rebirth_modal_buttons {
   float: right;
   margin: 25px;
+  display: flex;
+  flex-direction: row;
 }
 
 #reset_modal_buttons button,

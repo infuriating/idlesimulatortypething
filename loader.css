@@ -11,6 +11,10 @@
   animation: loading 2s ease-in-out forwards;
 }
 
+#loading img {
+  height: 100px;
+}
+
 @keyframes loading {
   0%,
   75% {
