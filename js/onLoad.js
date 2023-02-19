@@ -6,6 +6,7 @@ const saveState = {
   cashMultiplier: 0.05,
   multiply: 1,
   upgradeTotalAmount: 0,
+  rebirths: 0,
   upgrades: [
     {
       max: 50,
@@ -92,5 +93,6 @@ function loadData() {
     saveState.multiply = loadState.multiply;
     saveState.upgrades = loadState.upgrades;
     saveState.upgradeTotalAmount = loadState.upgradeTotalAmount;
+    saveState.rebirths = loadState.rebirths;
   }
 }

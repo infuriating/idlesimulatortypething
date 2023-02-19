@@ -22,9 +22,14 @@ function cashCounter() {
   }
 }
 
+const rebirthCalculation = 0.25 * saveState.rebirths;
+
 setInterval(() => {
   saveState.cash += saveState.addCash;
-  saveState.addCash += saveState.cashMultiplier * saveState.multiply;
+  saveState.addCash +=
+    saveState.cashMultiplier * saveState.multiply + rebirthCalculation;
+  saveState.totalCash +=
+    saveState.cashMultiplier * saveState.multiply + rebirthCalculation;
   cashCounter();
   // upgradeChecker();
 }, 1000);
