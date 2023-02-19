@@ -29,17 +29,6 @@ const saveState = {
       multiply: 1,
       description: "Add 0.1$ to the generator",
     },
-    {
-      max: 10,
-      name: "Multiply the Multiplier",
-      cost: 1000,
-      costIncreaser: 1.55,
-      amount: 0,
-      addCash: 0,
-      multiplier: 0,
-      multiply: 1.3,
-      description: "Multiplies the multiplier by 30% per upgrade",
-    },
   ],
 };
 
@@ -60,4 +49,14 @@ function loadData() {
     saveState.upgrades = loadState.upgrades;
     saveState.upgradeTotalAmount = loadState.upgradeTotalAmount;
   }
+}
+
+function loadUpgrades() {
+  document.getElementById("upgrades").innerHTML += `
+        <div class="upgrade">
+        <div class="upgrade__details">
+        <div class="upgrade__cost">Cost: ${saveState.upgrades.cost}</div>
+        <div class="upgrade__amount">Amount: ${saveState.upgrades.amount}/${saveState.upgrades.max}</div>
+        </div>
+    `;
 }

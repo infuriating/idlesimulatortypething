@@ -1,0 +1,34 @@
+@media (max-width: 1000px) {
+  #header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  #header h1 {
+    margin-right: 15%;
+  }
+  #header h4,
+  #header h3 {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .container__left {
+    border-right: none;
+  }
+  .container__right {
+    display: flex;
+    flex-direction: column;
+  }
+  .upgrades {
+    height: 100%;
+  }
+  #reset {
+    height: 60%;
+    margin-bottom: 2rem;
+  }
+}
