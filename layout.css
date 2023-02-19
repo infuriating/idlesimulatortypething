@@ -50,5 +50,5 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#252525, black);
+  background: linear-gradient(transparent, black);
 }

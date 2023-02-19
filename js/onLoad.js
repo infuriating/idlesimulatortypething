@@ -25,9 +25,9 @@ const saveState = {
       costIncreaser: 1.2,
       amount: 0,
       addCash: 0,
-      multiplier: 0.1,
+      multiplier: 0.05,
       multiply: 1,
-      description: "Adds 0.1$ to the generator",
+      description: "Adds 0.05$ to the generator",
     },
     {
       max: 15,
