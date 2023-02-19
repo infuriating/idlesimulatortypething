@@ -1,4 +1,7 @@
 @media (max-width: 1000px) {
+  body {
+    overflow: hidden;
+  }
   #header {
     height: 80px;
     width: 100%;
@@ -28,7 +31,7 @@
     height: 100%;
   }
   #reset {
-    height: 60%;
+    height: 20%;
     margin-bottom: 2rem;
   }
 }
