@@ -43,7 +43,7 @@ const saveState = {
     {
       max: 20,
       name: "Multiply the Multiplier",
-      cost: 2000,
+      cost: 2500,
       costIncreaser: 1.55,
       amount: 0,
       addCash: 0,
@@ -54,7 +54,7 @@ const saveState = {
     {
       max: 10,
       name: "Helpful.. I guess?",
-      cost: 1500,
+      cost: 15000,
       costIncreaser: 2,
       amount: 0,
       addCash: 0,
