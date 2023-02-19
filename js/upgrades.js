@@ -8,7 +8,7 @@ function loadUpgrades() {
         }</div>
         <div class="upgrade__details">
         <div class="upgrade__cost">Cost: ${saveState.upgrades[i].cost.toFixed(
-          1
+          0
         )}</div>
         <div class="upgrade__amount">Amount: ${saveState.upgrades[i].amount}/${
       saveState.upgrades[i].max
@@ -37,7 +37,7 @@ function buyUpgrade(upgrade) {
     saveState.multiply *= saveState.upgrades[upgrade].multiply;
     document.getElementsByClassName("upgrade__cost")[
       upgrade
-    ].innerHTML = `Cost: ${saveState.upgrades[upgrade].cost.toFixed(1)}`;
+    ].innerHTML = `Cost: ${saveState.upgrades[upgrade].cost.toFixed(0)}`;
     document.getElementsByClassName("upgrade__amount")[
       upgrade
     ].innerHTML = `Amount: ${saveState.upgrades[upgrade].amount}/${saveState.upgrades[upgrade].max}`;

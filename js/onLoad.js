@@ -84,13 +84,3 @@ function loadData() {
     saveState.upgradeTotalAmount = loadState.upgradeTotalAmount;
   }
 }
-
-function loadUpgrades(upgrade) {
-  document.getElementById("upgrades").innerHTML += `
-        <div class="upgrade">
-        <div class="upgrade__details">
-        <div class="upgrade__cost">Cost: ${saveState.upgrades.cost}</div>
-        <div class="upgrade__amount">Amount: ${saveState.upgrades.amount}/${saveState.upgrades.max}</div>
-        </div>
-    `;
-}
