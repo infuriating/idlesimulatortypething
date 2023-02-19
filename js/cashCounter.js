@@ -11,7 +11,7 @@ function cashCounter() {
       "cash_updater"
     ).innerHTML = `${saveState.cash.toFixed(0)}`;
   }
-  if (saveState.addCash >= 10) {
+  if (saveState.addCash >= 100) {
     document.getElementById(
       "addCash_updater"
     ).innerHTML = `${saveState.addCash.toFixed(1)}`;
