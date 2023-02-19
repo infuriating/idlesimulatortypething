@@ -11,7 +11,7 @@ const saveState = {
       max: 50,
       name: "Help yourself",
       cost: 10,
-      costIncreaser: 1.3,
+      costIncreaser: 1.25,
       amount: 0,
       addCash: 1,
       multiplier: 0,
