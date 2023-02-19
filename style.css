@@ -40,13 +40,11 @@ button:hover {
 }
 
 button:active {
-  background: #7a94c0;
-  color: #fff;
   transform: scale(0.95);
 }
 
 button:disabled:hover {
-  background-color: #fff;
+  background-color: rgb(182, 125, 125);
 }
 
 #app {

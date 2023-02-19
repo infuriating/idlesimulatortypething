@@ -2,6 +2,7 @@ function rebirth(rebirth) {
   let modalh1 = document.getElementById("rebirth_modal_content_h1"),
     modalh3 = document.getElementById("rebirth_modal_content_h3"),
     modalh4 = document.getElementById("rebirth_modal_content_h4"),
+    rebirthDiv = document.getElementById("rebirth"),
     rebirthEmphasis = document.getElementById("rebirth_yellow"),
     rebirthRender = document.getElementById("rebirth_updater"),
     rebirthConfirmation = document.getElementById("rebirth_modal_confirmation");
@@ -37,15 +38,19 @@ function rebirth(rebirth) {
   }
   if (saveState.rebirths == 0) {
     modalh1.innerHTML = "First Rebirth";
+    rebirthDiv.style.display = "none";
   } else if (saveState.rebirths == 1) {
     modalh1.innerHTML = "Second Rebirth";
+    rebirthDiv.style.display = "block";
     rebirthEmphasis.innerHTML = "One";
     rebirthRender.innerHTML = " Rebirth";
   } else if (saveState.rebirths == 2) {
     modalh1.innerHTML = "Third Rebirth";
+    rebirthDiv.style.display = "block";
     rebirthEmphasis.innerHTML = "Two";
     rebirthRender.innerHTML = " Rebirths";
   } else if (saveState.rebirths == 3) {
+    rebirthDiv.style.display = "block";
     rebirthEmphasis.innerHTML = "Three";
     rebirthRender.innerHTML = " Rebirths";
   }
