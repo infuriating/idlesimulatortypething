@@ -22,7 +22,7 @@ function cashCounter() {
   }
 }
 
-const rebirthCalculation = 0.25 * saveState.rebirths;
+let rebirthCalculation = saveState.rebirths * 0.25;
 
 setInterval(() => {
   saveState.cash += saveState.addCash;

@@ -21,8 +21,8 @@ function rebirth(rebirth) {
       // resets values that are not the total to zero
       saveState.cash = 0;
       saveState.addCash = 0.5;
-      saveState.cashMultiplier = 1;
-      saveState.multiply = 0;
+      saveState.cashMultiplier = 0.05;
+      saveState.multiply = 1;
       localStorage.removeItem("upgrades");
       // + one rebirth
       saveState.rebirths += 1;
