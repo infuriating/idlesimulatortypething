@@ -5,7 +5,7 @@ let crit,
 function criticalHitHandler() {
   crit = Math.floor(Math.random() * 100) + 1;
 
-  if (crit >= 67 && crit <= 71) {
+  if (crit >= 68 && crit <= 70) {
     criticalHit = 10;
     criticalHitPopup.style.display = "flex";
     setTimeout(() => {

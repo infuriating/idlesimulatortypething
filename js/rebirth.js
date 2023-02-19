@@ -1,4 +1,5 @@
 function rebirth(rebirth) {
+  // innerHTML variables
   let modalh1 = document.getElementById("rebirth_modal_content_h1"),
     modalh3 = document.getElementById("rebirth_modal_content_h3"),
     modalh4 = document.getElementById("rebirth_modal_content_h4"),
@@ -6,6 +7,9 @@ function rebirth(rebirth) {
     rebirthEmphasis = document.getElementById("rebirth_yellow"),
     rebirthRender = document.getElementById("rebirth_updater"),
     rebirthConfirmation = document.getElementById("rebirth_modal_confirmation");
+
+  // rebirth 1 upgrades
+  let clicker = document.getElementById("clicker");
 
   switch (rebirth) {
     case "modalOpen":
@@ -39,6 +43,7 @@ function rebirth(rebirth) {
   if (saveState.rebirths == 0) {
     modalh1.innerHTML = "First Rebirth";
     rebirthDiv.style.display = "none";
+    clicker.style.display = "none";
   } else if (saveState.rebirths == 1) {
     modalh1.innerHTML = "Second Rebirth";
     rebirthDiv.style.display = "block";
@@ -53,6 +58,9 @@ function rebirth(rebirth) {
     rebirthDiv.style.display = "block";
     rebirthEmphasis.innerHTML = "Three";
     rebirthRender.innerHTML = " Rebirths";
+  }
+  if (saveState.rebirths > 0) {
+    clicker.style.display = "block";
   }
   if (saveState.rebirths == 0 && saveState.cash > 1000000) {
     modalh3.innerHTML =

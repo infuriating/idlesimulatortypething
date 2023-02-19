@@ -7,7 +7,7 @@ function loadUpgrades() {
           saveState.upgrades[i].description
         }</div>
         <div class="upgrade__details">
-        <div class="upgrade__cost">Cost: ${saveState.upgrades[i].cost.toFixed(
+        <div class="upgrade__cost">Cost: $${saveState.upgrades[i].cost.toFixed(
           0
         )}</div>
         <div class="upgrade__amount">Amount: ${saveState.upgrades[i].amount}/${
@@ -37,7 +37,7 @@ function buyUpgrade(upgrade) {
     saveState.multiply *= saveState.upgrades[upgrade].multiply;
     document.getElementsByClassName("upgrade__cost")[
       upgrade
-    ].innerHTML = `Cost: ${saveState.upgrades[upgrade].cost.toFixed(0)}`;
+    ].innerHTML = `Cost: $${saveState.upgrades[upgrade].cost.toFixed(0)}`;
     document.getElementsByClassName("upgrade__amount")[
       upgrade
     ].innerHTML = `Amount: ${saveState.upgrades[upgrade].amount}/${saveState.upgrades[upgrade].max}`;
@@ -48,5 +48,6 @@ function buyUpgrade(upgrade) {
     document.querySelectorAll(".upgrade__button")[upgrade].disabled = true;
     document.querySelectorAll(".upgrade__button")[upgrade].innerHTML =
       "Maxed out!";
+    document.querySelectorAll(".upgrade__cost")[upgrade].style.display = "none";
   }
 }

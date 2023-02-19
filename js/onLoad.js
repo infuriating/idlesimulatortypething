@@ -80,6 +80,18 @@ const saveState = {
       multiply: 2,
       description: "Adds 100% to the multiplier",
     },
+    // {
+    //   max: 20,
+    //   name: "The Money Tree",
+    //   baseCost: 50000,
+    //   cost: 50000,
+    //   costIncreaser: 1.6,
+    //   amount: 0,
+    //   addCash: 0,
+    //   multiplier: 0.5,
+    //   multiply: 0,
+    //   description: "REBIRTH 1 UPGRADE: Adds 0.50$ to the generator",
+    // },
   ],
 };
 

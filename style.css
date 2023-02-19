@@ -94,6 +94,8 @@ h3 {
 }
 
 .money {
+  display: grid;
+  place-items: center;
   padding: 50px;
   padding-inline: 100px;
   background-color: #1d1d1d;
@@ -151,7 +153,7 @@ h3 {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
 }
 
 #rebirth span {
@@ -160,6 +162,38 @@ h3 {
 
 #rebirth_yellow {
   color: yellow;
+}
+
+#clicker button {
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  border-radius: 10px;
+}
+
+.clickerPopup {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: greenyellow;
+  font-family: 500;
+  font-size: 1.125rem;
+  animation: clickerPopup 1.5s linear;
+  text-shadow: 0px 0px 3px, 0px 0px 12px rgba(173, 255, 47, 0.4);
+}
+
+@keyframes clickerPopup {
+  0% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-7.5rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15rem);
+  }
 }
 
 #rebirthing {
