@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="loader.css" />
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
@@ -21,8 +22,8 @@
         <h3>Are you sure you want to reset your data?</h3>
         <h4 style="color: red">You will lose all your progress</h4>
         <div id="reset_modal_buttons">
-          <button onclick="resetData()">Yes</button>
-          <button onclick="resetDataModalClose()">No</button>
+          <button onclick="resetData('resetConfirmation')">Yes</button>
+          <button onclick="resetData('modalClose')">No</button>
         </div>
       </div>
     </div>
@@ -35,14 +36,20 @@
       <div class="container grid">
         <div class="container__left">
           <div class="money">
-            <div id="addCash"></div>
-            <div id="cash"></div>
+            <div id="cash">
+              <span id="cash_dollarsign">$</span>
+              <span id="cash_updater"></span>
+            </div>
+            <div id="addCash">
+              <span id="addCash_updater"></span>
+              <span id="addCash_persecond">p/s</span>
+            </div>
           </div>
         </div>
         <div class="container__right">
           <div id="upgrades"></div>
           <div id="reset">
-            <button onclick="resetDataModalShow()">Reset your Data</button>
+            <button onclick="resetData('modalOpen')">Reset your Data</button>
           </div>
         </div>
       </div>

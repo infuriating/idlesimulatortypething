@@ -1,3 +1,4 @@
+//loads the data from the local storage
 const saveState = {
   addCash: 1,
   cash: 2,
@@ -37,10 +38,12 @@ const saveState = {
   ],
 };
 
+// saves data to local storage every second
 setInterval(() => {
   localStorage.setItem("saveState", JSON.stringify(saveState));
 }, 1000);
 
+// loads everything from saveState on pageload
 function loadData() {
   let loadState = JSON.parse(localStorage.getItem("saveState"));
   if (loadState !== null) {
