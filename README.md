@@ -26,3 +26,5 @@
 ###### (that new shitty roblox game trend definitely heavily inspired this)
 
 [Test the game!](https://bestidlegame2029.infs.world)
+
+##### i do recommend resetting your data incase somethings wrong, the major issues only occur once i make any major changes to the game
