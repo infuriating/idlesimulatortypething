@@ -45,11 +45,11 @@
   grid-template-rows: 75% 1fr;
 }
 
-#reset {
+#container__right_buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
+  gap: 0.5rem;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(transparent, black);
 }
