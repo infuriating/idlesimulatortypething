@@ -25,8 +25,14 @@ function cashCounter() {
 setInterval(() => {
   saveState.cash += saveState.addCash;
   saveState.addCash +=
-    saveState.cashMultiplier * saveState.multiply * criticalHit;
+    saveState.cashMultiplier *
+    saveState.multiply *
+    saveState.rebirths.rebirthMultiplier *
+    criticalHit;
   saveState.totalCash +=
-    saveState.cashMultiplier * saveState.multiply * criticalHit;
+    saveState.cashMultiplier *
+    saveState.multiply *
+    saveState.rebirths.rebirthMultiplier *
+    criticalHit;
   cashCounter();
 }, 1000);

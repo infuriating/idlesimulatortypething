@@ -6,7 +6,10 @@ const saveState = {
   cashMultiplier: 0.05,
   multiply: 1,
   upgradeTotalAmount: 0,
-  rebirths: 0,
+  rebirths: {
+    rebirth: 0,
+    rebirthMultiplier: 1,
+  },
   upgrades: [
     {
       max: 50,

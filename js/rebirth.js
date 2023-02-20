@@ -34,50 +34,51 @@ function rebirth(rebirth) {
         saveState.upgrades[i].amount = 0;
       }
       // + one rebirth
-      saveState.rebirths += 1;
+      saveState.rebirths.rebirth += 1;
+      saveState.rebirths.rebirthMultiplier *= 1.25;
       setInterval(() => {
         location.reload();
       }, 1500);
       break;
   }
-  if (saveState.rebirths == 0) {
+  if (saveState.rebirths.rebirth == 0) {
     modalh1.innerHTML = "First Rebirth";
     rebirthDiv.style.display = "none";
     clicker.style.display = "none";
-  } else if (saveState.rebirths == 1) {
+  } else if (saveState.rebirths.rebirth == 1) {
     modalh1.innerHTML = "Second Rebirth";
     rebirthDiv.style.display = "block";
     rebirthEmphasis.innerHTML = "One";
     rebirthRender.innerHTML = " Rebirth";
-  } else if (saveState.rebirths == 2) {
+  } else if (saveState.rebirths.rebirth == 2) {
     modalh1.innerHTML = "Third Rebirth";
     rebirthDiv.style.display = "block";
     rebirthEmphasis.innerHTML = "Two";
     rebirthRender.innerHTML = " Rebirths";
-  } else if (saveState.rebirths == 3) {
+  } else if (saveState.rebirths.rebirth == 3) {
     rebirthDiv.style.display = "block";
     rebirthEmphasis.innerHTML = "Three";
     rebirthRender.innerHTML = " Rebirths";
   }
-  if (saveState.rebirths > 0) {
+  if (saveState.rebirths.rebirth > 0) {
     clicker.style.display = "block";
   }
-  if (saveState.rebirths == 0 && saveState.cash > 1000000) {
+  if (saveState.rebirths.rebirth == 0 && saveState.cash > 1000000) {
     modalh3.innerHTML =
       "You have enough money to rebirth. Do you want to rebirth?";
     modalh4.innerHTML = "You will receive a 1.25x boost and extra upgrades.";
     rebirthConfirmation.style.display = "block";
-  } else if (saveState.rebirths == 1 && saveState.cash > 100000000) {
+  } else if (saveState.rebirths.rebirth == 1 && saveState.cash > 100000000) {
     modalh3.innerHTML =
       "You have enough money to rebirth. Do you want to rebirth?";
     modalh4.innerHTML = "You will receive a 1.25x boost and extra upgrades.";
     rebirthConfirmation.style.display = "block";
-  } else if (saveState.rebirths == 2 && saveState.cash > 1000000000) {
+  } else if (saveState.rebirths.rebirth == 2 && saveState.cash > 1000000000) {
     modalh3.innerHTML =
       "You have enough money to rebirth. Do you want to rebirth?";
     modalh4.innerHTML = "You will receive a 1.25x boost and extra upgrades.";
     rebirthConfirmation.style.display = "block";
-  } else if (saveState.rebirths == 3) {
+  } else if (saveState.rebirths.rebirth == 3) {
     modalh3.innerHTML = "You have reached the maximum rebirths.";
     modalh4.innerHTML = "";
     rebirthConfirmation.style.display = "none";
@@ -85,15 +86,15 @@ function rebirth(rebirth) {
     modalh3.innerHTML = "You don't have enough money!";
     modalh4.innerHTML = "";
     rebirthConfirmation.style.display = "none";
-    if (saveState.rebirths == 0 && saveState.cash < 1000000) {
+    if (saveState.rebirths.rebirth == 0 && saveState.cash < 1000000) {
       modalh4.innerHTML = "You need $1.000.000 to rebirth.";
       modalh4.style.color = "red";
     }
-    if (saveState.rebirths == 1 && saveState.cash < 10000000) {
+    if (saveState.rebirths.rebirth == 1 && saveState.cash < 10000000) {
       modalh4.innerHTML = "You need $10.000.000 to rebirth.";
       modalh4.style.color = "red";
     }
-    if (saveState.rebirths == 2 && saveState.cash < 100000000) {
+    if (saveState.rebirths.rebirth == 2 && saveState.cash < 100000000) {
       modalh4.innerHTML = "You need $100.000.000 to rebirth.";
       modalh4.style.color = "red";
     }
