@@ -39,27 +39,44 @@
         <h1 id="rebirth_points_modal_content_h1"></h1>
         <h3 id="rebirth_points_modal_content_h3"></h3>
         <h4 id="rebirth_points_modal_content_h4" style="color: green"></h4>
-        <div id="rebirth_points_modal_buttons">
-          <button
-            id="rebirth_points_upgrade_1"
-            onclick="rebirthPoints('upgrade1')"
-          >
-            1.1x Boost
-          </button>
-          <button
-            id="rebirth_points_upgrade_2"
-            onclick="rebirthPoints('upgrade2')"
-          >
-            1.1x Boost
-          </button>
-          <button
-            id="rebirth_points_upgrade_3"
-            onclick="rebirthPoints('upgrade3')"
-          >
-            1.1x Boost
-          </button>
-          <button onclick="rebirthPoints('modalClose')">Return</button>
+        <div class="rebirth_points_modal_buttons">
+          <div class="rebirth_points_upgrade_container">
+            <p>Add a x1.1 cash boost</p>
+            <button
+              id="rebirth_points_upgrade_1"
+              onclick="rebirthPoints('upgrade1')"
+            >
+              +
+            </button>
+            <p id="rebirth_points_upgrade1_counter"></p>
+          </div>
+          <div class="rebirth_points_upgrade_container">
+            <p>Add a x1.1 cash boost</p>
+            <button
+              id="rebirth_points_upgrade_2"
+              onclick="rebirthPoints('upgrade2')"
+            >
+              +
+            </button>
+            <p id="rebirth_points_upgrade2_counter"></p>
+          </div>
+          <div class="rebirth_points_upgrade_container">
+            <p>Add a x1.1 cash boost</p>
+            <button
+              id="rebirth_points_upgrade_3"
+              onclick="rebirthPoints('upgrade3')"
+            >
+              +
+            </button>
+            <p id="rebirth_points_upgrade3_counter"></p>
+          </div>
         </div>
+        <button
+          id="rebirth_points_modal_closer"
+          onclick="rebirthPoints('modalClose') "
+        >
+          Close
+        </button>
       </div>
     </div>
     <div id="reset_modal">

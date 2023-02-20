@@ -9,8 +9,13 @@ const saveState = {
   rebirths: {
     rebirth: 0,
     rebirthMultiplier: 1,
-    rebirthPoints: 0,
-    rebirthPointsMultiplier: 1,
+    rebirthPoints: {
+      rebirthPoints: 0,
+      rebirthPointsMultiplier: 1,
+      rebirthPointsUpgrade1: 0,
+      rebirthPointsUpgrade2: 0,
+      rebirthPointsUpgrade3: 0,
+    },
   },
   upgrades: [
     {

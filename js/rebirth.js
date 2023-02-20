@@ -37,7 +37,7 @@ function rebirth(rebirth) {
       // + one rebirth
       saveState.rebirths.rebirth += 1;
       saveState.rebirths.rebirthMultiplier *= 1.25;
-      saveState.rebirths.rebirthPoints += 2;
+      saveState.rebirths.rebirthPoints.rebirthPoints += 3;
       setInterval(() => {
         location.reload();
       }, 1500);

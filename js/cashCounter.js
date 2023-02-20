@@ -28,13 +28,13 @@ setInterval(() => {
     saveState.cashMultiplier *
     saveState.multiply *
     saveState.rebirths.rebirthMultiplier *
-    saveState.rebirths.rebirthPointsMultiplier *
+    saveState.rebirths.rebirthPoints.rebirthPointsMultiplier *
     criticalHit;
   saveState.totalCash +=
     saveState.cashMultiplier *
     saveState.multiply *
     saveState.rebirths.rebirthMultiplier *
-    saveState.rebirths.rebirthPointsMultiplier *
+    saveState.rebirths.rebirthPoints.rebirthPointsMultiplier *
     criticalHit;
   cashCounter();
 }, 1000);
