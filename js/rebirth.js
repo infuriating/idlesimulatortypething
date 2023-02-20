@@ -45,11 +45,13 @@ function rebirth(rebirth) {
     modalh1.innerHTML = "First Rebirth";
     rebirthDiv.style.display = "none";
     clicker.style.display = "none";
+    document.getElementById("upgrade_container6").style.display = "none";
   } else if (saveState.rebirths.rebirth == 1) {
     modalh1.innerHTML = "Second Rebirth";
     rebirthDiv.style.display = "block";
     rebirthEmphasis.innerHTML = "One";
     rebirthRender.innerHTML = " Rebirth";
+    document.getElementById("upgrade_container6").style.display = "block";
   } else if (saveState.rebirths.rebirth == 2) {
     modalh1.innerHTML = "Third Rebirth";
     rebirthDiv.style.display = "block";

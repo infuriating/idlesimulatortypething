@@ -1,7 +1,7 @@
 function loadUpgrades() {
   for (let i = 0; i < saveState.upgrades.length; i++) {
     document.getElementById("upgrades").innerHTML += `
-        <div class="upgrade">
+        <div class="upgrade" id="upgrade_container${i}">
         <div class="upgrade__name">${saveState.upgrades[i].name}</div>
         <div class="upgrade__description">${
           saveState.upgrades[i].description
@@ -42,7 +42,6 @@ function buyUpgrade(upgrade) {
       upgrade
     ].innerHTML = `Amount: ${saveState.upgrades[upgrade].amount}/${saveState.upgrades[upgrade].max}`;
     cashCounter();
-    // upgradeChecker();
   }
   if (saveState.upgrades[upgrade].max <= saveState.upgrades[upgrade].amount) {
     document.querySelectorAll(".upgrade__button")[upgrade].disabled = true;
