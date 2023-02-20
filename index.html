@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/loader.css" />
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/modals.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,6 +31,34 @@
             Rebirth
           </button>
           <button onclick="rebirth('modalClose')">Return</button>
+        </div>
+      </div>
+    </div>
+    <div id="rebirth_points_modal">
+      <div id="rebirth_points_modal_content">
+        <h1 id="rebirth_points_modal_content_h1"></h1>
+        <h3 id="rebirth_points_modal_content_h3"></h3>
+        <h4 id="rebirth_points_modal_content_h4" style="color: green"></h4>
+        <div id="rebirth_points_modal_buttons">
+          <button
+            id="rebirth_points_upgrade_1"
+            onclick="rebirthPoints('upgrade1')"
+          >
+            1.1x Boost
+          </button>
+          <button
+            id="rebirth_points_upgrade_2"
+            onclick="rebirthPoints('upgrade2')"
+          >
+            1.1x Boost
+          </button>
+          <button
+            id="rebirth_points_upgrade_3"
+            onclick="rebirthPoints('upgrade3')"
+          >
+            1.1x Boost
+          </button>
+          <button onclick="rebirthPoints('modalClose')">Return</button>
         </div>
       </div>
     </div>
@@ -78,6 +107,12 @@
           <div id="reset">
             <button onclick="resetData('modalOpen')">Reset your Data</button>
             <button onclick="rebirth('modalOpen')">Rebirth</button>
+            <button
+              onclick="rebirthPoints('modalOpen')"
+              id="rebirth_points_button"
+            >
+              Rebirth Points
+            </button>
             <button onclick="money()">+money</button>
           </div>
         </div>
@@ -91,5 +126,6 @@
     <script src="js/troubleshooting.js"></script>
     <script src="js/criticalHit.js"></script>
     <script src="js/rebirth.js"></script>
+    <script src="js/rebirthPoints.js"></script>
   </body>
 </html>
