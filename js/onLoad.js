@@ -12,7 +12,7 @@ const saveState = {
   },
   upgrades: [
     {
-      max: 50,
+      max: 25,
       name: "Help yourself",
       baseCost: 10,
       cost: 10,
@@ -24,7 +24,7 @@ const saveState = {
       description: "Adds a extra dollar per second",
     },
     {
-      max: 25,
+      max: 30,
       name: "MORE! MORE! MORE!",
       baseCost: 100,
       cost: 100,
@@ -36,7 +36,7 @@ const saveState = {
       description: "Adds 0.05$ to the generator",
     },
     {
-      max: 15,
+      max: 20,
       name: "More money, less problems",
       baseCost: 750,
       cost: 750,
@@ -52,7 +52,7 @@ const saveState = {
       name: "Multiply the Multiplier",
       baseCost: 2500,
       cost: 2500,
-      costIncreaser: 1.55,
+      costIncreaser: 1.3,
       amount: 0,
       addCash: 0,
       multiplier: 0,
@@ -60,7 +60,7 @@ const saveState = {
       description: "Adds 30% to the multiplier",
     },
     {
-      max: 25,
+      max: 20,
       name: "Mr Burns' Money Machine",
       baseCost: 7500,
       cost: 7500,
