@@ -27,4 +27,4 @@
 
 [Test the game!](https://bestidlegame2029.infs.world)
 
-##### i do recommend resetting your data incase somethings wrong, the major issues only occur once i make any major changes to the game
+##### i do recommend resetting your data once you feel like something is wrong, the major issues only occur once i make any major changes to the game
