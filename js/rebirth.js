@@ -65,18 +65,18 @@ function rebirth(rebirth) {
   }
   if (saveState.rebirths.rebirth == 0 && saveState.cash > 1000000) {
     modalh3.innerHTML =
-      "You have enough money to rebirth. Do you want to rebirth?";
-    modalh4.innerHTML = "You will receive a 1.25x boost and extra upgrades.";
+      "You have enough money to rebirth.<br>You will start over again with some great advancements.";
+    modalh4.innerHTML = "You will receive a x1.25 boost and a Clicker upgrade.";
     rebirthConfirmation.style.display = "block";
   } else if (saveState.rebirths.rebirth == 1 && saveState.cash > 100000000) {
     modalh3.innerHTML =
       "You have enough money to rebirth. Do you want to rebirth?";
-    modalh4.innerHTML = "You will receive a 1.25x boost and extra upgrades.";
+    modalh4.innerHTML = "You will receive a 1.25x boost.";
     rebirthConfirmation.style.display = "block";
   } else if (saveState.rebirths.rebirth == 2 && saveState.cash > 1000000000) {
     modalh3.innerHTML =
       "You have enough money to rebirth. Do you want to rebirth?";
-    modalh4.innerHTML = "You will receive a 1.25x boost and extra upgrades.";
+    modalh4.innerHTML = "You will receive a 1.25x boost.";
     rebirthConfirmation.style.display = "block";
   } else if (saveState.rebirths.rebirth == 3) {
     modalh3.innerHTML = "You have reached the maximum rebirths.";
