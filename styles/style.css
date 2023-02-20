@@ -185,15 +185,15 @@ h3 {
 @keyframes clickerPopup {
   0% {
     opacity: 1;
-    transform: translateY(0rem);
+    transform: translateY(-3.25rem);
   }
   50% {
     opacity: 1;
-    transform: translateY(-7.5rem);
+    transform: translateY(-10.75rem);
   }
   100% {
     opacity: 0;
-    transform: translateY(-15rem);
+    transform: translateY(-18.25rem);
   }
 }
 
