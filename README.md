@@ -19,6 +19,7 @@
   > Rebirth Upgrades
 - **Clicking** (available after first Rebirth)
 - **Critical Hits** (1/100 chance, gives a **10x** boost)
+- And many more are on it's way!
 
 #### All the statistics are currently saved via localStorage, planning to add a backend in the future once the game is near completion.
 
