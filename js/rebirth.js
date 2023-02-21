@@ -51,7 +51,7 @@ function rebirth(rebirth) {
     rebirthPointsButton.style.display = "none";
     document.getElementById("upgrade_container6").style.display = "none";
   } else if (saveState.rebirths.rebirth >= 1) {
-    modalh1.innerHTML = "Second Rebirth";
+    modalh1.innerHTML = "Rebirth " + saveState.rebirths.rebirth + "!";
     rebirthDiv.style.display = "block";
     rebirthRender.innerHTML = "Rebirth ";
     rebirthEmphasis.innerHTML = saveState.rebirths.rebirth;
