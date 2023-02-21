@@ -9,6 +9,7 @@ const saveState = {
   rebirths: {
     rebirth: 0,
     rebirthMultiplier: 1,
+    rebirthCost: 1000000,
     rebirthPoints: {
       rebirthPoints: 0,
       rebirthPointsMultiplier: 1,
