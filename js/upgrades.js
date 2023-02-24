@@ -56,6 +56,8 @@ function checkUpgrades() {
   for (let i = 0; i < saveState.upgrades.length; i++) {
     if (saveState.cash < saveState.upgrades[i].cost) {
       document.querySelectorAll(".upgrade__button")[i].disabled = true;
+    } else {
+      document.querySelectorAll(".upgrade__button")[i].disabled = false;
     }
   }
 }
