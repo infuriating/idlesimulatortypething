@@ -42,11 +42,20 @@ function buyUpgrade(upgrade) {
       upgrade
     ].innerHTML = `Amount: ${saveState.upgrades[upgrade].amount}/${saveState.upgrades[upgrade].max}`;
     cashCounter();
+    checkUpgrades();
   }
   if (saveState.upgrades[upgrade].max <= saveState.upgrades[upgrade].amount) {
     document.querySelectorAll(".upgrade__button")[upgrade].disabled = true;
     document.querySelectorAll(".upgrade__button")[upgrade].innerHTML =
       "Maxed out!";
     document.querySelectorAll(".upgrade__cost")[upgrade].style.display = "none";
+  }
+}
+
+function checkUpgrades() {
+  for (let i = 0; i < saveState.upgrades.length; i++) {
+    if (saveState.cash < saveState.upgrades[i].cost) {
+      document.querySelectorAll(".upgrade__button")[i].disabled = true;
+    }
   }
 }

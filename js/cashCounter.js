@@ -33,4 +33,5 @@ setInterval(() => {
   saveState.totalCash += saveState.addCash;
   criticalHit;
   cashCounter();
+  checkUpgrades();
 }, 1000);
