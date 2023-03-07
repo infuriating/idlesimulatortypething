@@ -364,6 +364,7 @@ h3 {
 }
 
 #daily_missions {
+  display: none;
   position: absolute;
   margin-top: 70px;
   z-index: 100;
