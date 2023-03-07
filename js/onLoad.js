@@ -111,6 +111,41 @@ const saveState = {
       description: "REBIRTH 1 UPGRADE: Adds 0.30$ to the generator",
     },
   ],
+  dailyMissions: {
+    dailyMissionMultiplier: 1,
+    missions: [
+      {
+        id: 1,
+        name: "Daily Mission 1",
+        reward: "Permanent 1.1x Multiplier",
+        upgradePoint: true,
+      },
+      {
+        id: 2,
+        name: "Daily Mission 2",
+        reward: "Permanent 1.1x Multiplier",
+        upgradePoint: false,
+      },
+      {
+        id: 3,
+        name: "Daily Mission 3",
+        reward: "Permanent 1.1x Multiplier",
+        upgradePoint: false,
+      },
+      {
+        id: 4,
+        name: "Daily Mission 4",
+        reward: "Permanent 1.1x Multiplier",
+        upgradePoint: true,
+      },
+      {
+        id: 5,
+        name: "Daily Mission 5",
+        reward: "Permanent 1.1x Multiplier",
+        upgradePoint: false,
+      },
+    ],
+  },
 };
 
 // saves data to local storage every second
@@ -131,5 +166,6 @@ function loadData() {
     saveState.upgradeTotalAmount = loadState.upgradeTotalAmount;
     saveState.rebirths = loadState.rebirths;
     saveState.upgradePoints = loadState.upgradePoints;
+    saveState.dailyMissions = loadState.dailyMissions;
   }
 }

@@ -102,6 +102,47 @@
       </div>
     </div>
     <div id="app">
+      <div id="daily_missions">
+        <div class="daily_mission_container">
+          <div id="daily_mission_timer"></div>
+          <div id="daily_mission_1">
+            <h1 id="daily_mission_1_name"></h1>
+            <h4 id="daily_mission_1_progress"></h4>
+            <h4 id="daily_mission_1_reward"></h4>
+            <button
+              id="daily_mission_1_collect"
+              onclick="dailyMissions('collectReward')"
+            >
+              Collect
+            </button>
+          </div>
+          <div id="daily_mission_2">
+            <h1 id="daily_mission_2_name"></h1>
+            <h4 id="daily_mission_2_progress"></h4>
+            <h4 id="daily_mission_2_reward"></h4>
+            <button
+              id="daily_mission_2_collect"
+              onclick="dailyMissions('collectReward')"
+            >
+              Collect
+            </button>
+          </div>
+          <div id="daily_mission_3">
+            <h1 id="daily_mission_3_name"></h1>
+            <h4 id="daily_mission_3_progress"></h4>
+            <h4 id="daily_mission_3_reward"></h4>
+            <button
+              id="daily_mission_3_collect"
+              onclick="dailyMissions('collectReward')"
+            >
+              Collect
+            </button>
+          </div>
+        </div>
+        <div id="daily_mission_button">
+          <button onclick="dailyMissions('openMenu')">Missions</button>
+        </div>
+      </div>
       <div id="mobile_button_menu_opener">
         <button
           id="mobile_button_menu_opener_button"
@@ -177,5 +218,6 @@
     <script src="js/rebirth.js"></script>
     <script src="js/upgradePoints.js"></script>
     <script src="js/troubleshooting.js"></script>
+    <script src="js/dailyMissions.js"></script>
   </body>
 </html>

@@ -362,3 +362,36 @@ h3 {
 #mobile_button_menu_opener {
   display: none;
 }
+
+#daily_missions {
+  position: absolute;
+  margin-top: 70px;
+  z-index: 100;
+}
+
+.daily_mission_container {
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  background: #1d1d1d;
+  width: 500px;
+}
+
+#daily_mission_button button {
+  border-radius: 0px 12px 12px 0px;
+  background: #1d1d1d;
+  color: gainsboro;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75), 0px 0px 16px rgba(0, 0, 0, 0.3);
+}
+
+#daily_mission_1 {
+  padding: 1.25rem;
+  border-bottom: 1px gainsboro solid;
+}
+#daily_mission_2 {
+  padding: 1.25rem;
+  border-bottom: 1px gainsboro solid;
+}
+#daily_mission_3 {
+  padding: 1.25rem;
+}

@@ -47,4 +47,7 @@
   #mobile_button_menu_opener {
     display: block;
   }
+  #daily_missions {
+    display: none;
+  }
 }
