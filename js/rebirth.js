@@ -6,7 +6,7 @@ function rebirth(rebirth) {
     rebirthDiv = document.getElementById("rebirth"),
     rebirthEmphasis = document.getElementById("rebirth_yellow"),
     rebirthRender = document.getElementById("rebirth_updater"),
-    rebirthConfirmation = document.getElementById("rebirth_modal_confirmation"),
+    rebirthConfirmation = document.getElementById("rebirth_modal_confirmation");
 
   // rebirth 1 upgrades
   let clicker = document.getElementById("clicker");
