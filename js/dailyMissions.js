@@ -1,7 +1,9 @@
 let time = new Date(),
   hour = time.getHours(),
   minute = time.getMinutes(),
-  second = time.getSeconds();
+  second = time.getSeconds(),
+  countdown = 86400000,
+  duration = 86400000;
 
 let randomMission = Math.floor(Math.random() * 5),
   randomMission2 = Math.floor(Math.random() * 5),
@@ -20,11 +22,6 @@ let dailyMissionContainer = document.querySelector(".daily_mission_container"),
   dailyMission3Progress = document.getElementById("daily_mission_3_progress"),
   dailyMission3Reward = document.getElementById("daily_mission_3_reward");
 
-function setDailyMissions() {
-  updateDailyMissions();
-  checkDailyMissionDuplicates();
-}
-
 function dailyMissions(mission) {
   switch (mission) {
     case "collectReward": {
@@ -41,11 +38,11 @@ function dailyMissions(mission) {
       dailyMissionButton.setAttribute("onclick", "dailyMissions('closeMenu')");
       break;
     }
-    case "closeMenu": {
-      dailyMissionContainer.style.display = "none";
-      dailyMissionButton.setAttribute("onclick", "dailyMissions('openMenu')");
-      break;
-    }
+    // case "closeMenu": {
+    //   dailyMissionContainer.style.display = "none";
+    //   dailyMissionButton.setAttribute("onclick", "dailyMissions('openMenu')");
+    //   break;
+    // }
   }
 }
 
@@ -64,25 +61,43 @@ function updateDailyMissions() {
     saveState.dailyMissions.missions[randomMission3].reward;
 }
 
-function checkDailyMissionDuplicates() {
-  if (randomMission === randomMission2) {
-    randomMission2 = Math.floor(Math.random() * 5) + 1;
-    checkDailyMissionDuplicates();
-  }
-  if (randomMission === randomMission3) {
-    randomMission3 = Math.floor(Math.random() * 5) + 1;
-    checkDailyMissionDuplicates();
-  }
-  if (randomMission2 === randomMission3) {
-    randomMission3 = Math.floor(Math.random() * 5) + 1;
-    checkDailyMissionDuplicates();
-  }
-}
+// function checkDailyMissionDuplicates() {
+//   if (randomMission === randomMission2) {
+//     randomMission2 = Math.floor(Math.random() * 5) + 1;
+//     checkDailyMissionDuplicates();
+//   }
+//   if (randomMission === randomMission3) {
+//     randomMission3 = Math.floor(Math.random() * 5) + 1;
+//     checkDailyMissionDuplicates();
+//   }
+//   if (randomMission2 === randomMission3) {
+//     randomMission3 = Math.floor(Math.random() * 5) + 1;
+//     checkDailyMissionDuplicates();
+//   }
+// }
 
-function timing() {
+function timer(timer) {
+  let hour = Math.floor(countdown / 3600000),
+    minute = Math.floor((countdown % 3600000) / 60000),
+    second = Math.floor((countdown % 60000) / 1000);
+
   dailyMissionTimer.innerHTML = `${hour}:${minute}:${second}`;
+
+  if (countdown <= 0) {
+    countdown = duration;
+    randomMission = Math.floor(Math.random() * 5);
+    randomMission2 = Math.floor(Math.random() * 5);
+    randomMission3 = Math.floor(Math.random() * 5);
+    setDailyMissions();
+  }
 }
 
 setInterval(() => {
-  timing();
+  countdown -= 1000;
+  timer();
 }, 1000);
+
+function setDailyMissions() {
+  updateDailyMissions();
+  // checkDailyMissionDuplicates();
+}

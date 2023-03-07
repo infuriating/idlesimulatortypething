@@ -29,6 +29,7 @@ setInterval(() => {
     saveState.multiply *
     saveState.rebirths.rebirthMultiplier *
     saveState.upgradePoints.upgradePointsMultiplier *
+    saveState.dailyMissions.dailyMissionMultiplier *
     criticalHit;
   saveState.totalCash += saveState.addCash;
   criticalHit;
