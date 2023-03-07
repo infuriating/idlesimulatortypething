@@ -1,6 +1,6 @@
 #reset_modal,
 #rebirth_modal,
-#rebirth_points_modal,
+#upgrade_points_modal,
 #modal_backdrop {
   display: none;
 }
@@ -18,7 +18,7 @@
 
 #reset_modal,
 #rebirth_modal,
-#rebirth_points_modal {
+#upgrade_points_modal {
   text-align: center;
   position: fixed;
   top: 50%;
@@ -35,7 +35,7 @@
 
 #reset_modal_buttons,
 #rebirth_modal_buttons,
-#rebirth_points_modal_buttons {
+#upgrade_points_modal_buttons {
   float: right;
   margin: 25px;
   display: flex;
@@ -44,6 +44,6 @@
 
 #reset_modal_buttons button,
 #rebirth_modal_buttons button,
-#rebirth_points_modal_buttons button {
+#upgrade_points_modal_buttons button {
   margin-left: 15px;
 }

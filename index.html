@@ -24,7 +24,7 @@
 
     <title>gain money lol - testing</title>
   </head>
-  <body onload="loadData(), loadUpgrades()">
+  <body onload="loadData(), loadUpgrades(), checkUpgradePoints()">
     <div id="loading">
       <img src="images/loading.svg" alt="loading" />
     </div>
@@ -46,46 +46,46 @@
         </div>
       </div>
     </div>
-    <div id="rebirth_points_modal">
-      <div id="rebirth_points_modal_content">
-        <h1 id="rebirth_points_modal_content_h1"></h1>
-        <h3 id="rebirth_points_modal_content_h3"></h3>
-        <h4 id="rebirth_points_modal_content_h4" style="color: green"></h4>
-        <div class="rebirth_points_modal_buttons">
-          <div class="rebirth_points_upgrade_container">
+    <div id="upgrade_points_modal">
+      <div id="upgrade_points_modal_content">
+        <h1 id="upgrade_points_modal_content_h1"></h1>
+        <h3 id="upgrade_points_modal_content_h3"></h3>
+        <h4 id="upgrade_points_modal_content_h4" style="color: green"></h4>
+        <div class="upgrade_points_modal_buttons">
+          <div class="upgrade_points_upgrade_container">
             <p>Add a x1.1 cash boost</p>
             <button
-              id="rebirth_points_upgrade_1"
-              onclick="rebirthPoints('upgrade1')"
+              id="upgrade_points_upgrade_1"
+              onclick="upgradePoints('upgrade1')"
             >
               +
             </button>
-            <p id="rebirth_points_upgrade1_counter"></p>
+            <p id="upgrade_points_upgrade1_counter"></p>
           </div>
-          <div class="rebirth_points_upgrade_container">
+          <div class="upgrade_points_upgrade_container">
             <p>Add a x1.1 cash boost</p>
             <button
-              id="rebirth_points_upgrade_2"
-              onclick="rebirthPoints('upgrade2')"
+              id="upgrade_points_upgrade_2"
+              onclick="upgradePoints('upgrade2')"
             >
               +
             </button>
-            <p id="rebirth_points_upgrade2_counter"></p>
+            <p id="upgrade_points_upgrade2_counter"></p>
           </div>
-          <div class="rebirth_points_upgrade_container">
+          <div class="upgrade_points_upgrade_container">
             <p>Add a x1.1 cash boost</p>
             <button
-              id="rebirth_points_upgrade_3"
-              onclick="rebirthPoints('upgrade3')"
+              id="upgrade_points_upgrade_3"
+              onclick="upgradePoints('upgrade3')"
             >
               +
             </button>
-            <p id="rebirth_points_upgrade3_counter"></p>
+            <p id="upgrade_points_upgrade3_counter"></p>
           </div>
         </div>
         <button
-          id="rebirth_points_modal_closer"
-          onclick="rebirthPoints('modalClose') "
+          id="upgrade_points_modal_closer"
+          onclick="upgradePoints('modalClose') "
         >
           Close
         </button>
@@ -115,10 +115,10 @@
           <button onclick="resetData('modalOpen')">Reset your Data</button>
           <button onclick="rebirth('modalOpen')">Rebirth</button>
           <button
-            onclick="rebirthPoints('modalOpen')"
-            id="rebirth_points_button"
+            onclick="upgradePoints('modalOpen')"
+            id="mobile_upgrade_points_button"
           >
-            Rebirth Points
+            Upgrade Points
           </button>
         </div>
       </div>
@@ -158,10 +158,10 @@
             <button onclick="resetData('modalOpen')">Reset your Data</button>
             <button onclick="rebirth('modalOpen')">Rebirth</button>
             <button
-              onclick="rebirthPoints('modalOpen')"
-              id="rebirth_points_button"
+              onclick="upgradePoints('modalOpen')"
+              id="upgrade_points_button"
             >
-              Rebirth Points
+              Upgrade Points
             </button>
           </div>
         </div>
@@ -175,7 +175,7 @@
     <script src="js/openMobileMenu.js"></script>
     <script src="js/criticalHit.js"></script>
     <script src="js/rebirth.js"></script>
-    <script src="js/rebirthPoints.js"></script>
+    <script src="js/upgradePoints.js"></script>
     <script src="js/troubleshooting.js"></script>
   </body>
 </html>

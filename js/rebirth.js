@@ -7,7 +7,6 @@ function rebirth(rebirth) {
     rebirthEmphasis = document.getElementById("rebirth_yellow"),
     rebirthRender = document.getElementById("rebirth_updater"),
     rebirthConfirmation = document.getElementById("rebirth_modal_confirmation"),
-    rebirthPointsButton = document.getElementById("rebirth_points_button");
 
   // rebirth 1 upgrades
   let clicker = document.getElementById("clicker");
@@ -37,7 +36,7 @@ function rebirth(rebirth) {
       // + one rebirth
       saveState.rebirths.rebirth += 1;
       saveState.rebirths.rebirthMultiplier *= 1.25;
-      saveState.rebirths.rebirthPoints.rebirthPoints += 3;
+      saveState.upgradePoints.upgradePoints += 3;
       saveState.rebirths.rebirthCost *= 10;
       setInterval(() => {
         location.reload();
@@ -48,19 +47,15 @@ function rebirth(rebirth) {
     modalh1.innerHTML = "First Rebirth";
     rebirthDiv.style.display = "none";
     clicker.style.display = "none";
-    rebirthPointsButton.style.display = "none";
-    document.getElementById("upgrade_container6").style.display = "none";
   } else if (saveState.rebirths.rebirth >= 1) {
     modalh1.innerHTML = "Rebirth " + saveState.rebirths.rebirth + "!";
     rebirthDiv.style.display = "block";
     rebirthRender.innerHTML = "Rebirth ";
     rebirthEmphasis.innerHTML = saveState.rebirths.rebirth;
+    clicker.style.display = "block";
     document.getElementById("upgrade_container6").style.display = "block";
   }
-  if (saveState.rebirths.rebirth > 0) {
-    clicker.style.display = "block";
-    rebirthPointsButton.style.display = "block";
-  }
+  //
   if (
     saveState.rebirths.rebirth == 0 &&
     saveState.cash > saveState.rebirths.rebirthCost

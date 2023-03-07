@@ -10,13 +10,13 @@ const saveState = {
     rebirth: 0,
     rebirthMultiplier: 1,
     rebirthCost: 1000000,
-    rebirthPoints: {
-      rebirthPoints: 0,
-      rebirthPointsMultiplier: 1,
-      rebirthPointsUpgrade1: 0,
-      rebirthPointsUpgrade2: 0,
-      rebirthPointsUpgrade3: 0,
-    },
+  },
+  upgradePoints: {
+    upgradePoints: 0,
+    upgradePointsMultiplier: 1,
+    upgradePointsUpgrade1: 0,
+    upgradePointsUpgrade2: 0,
+    upgradePointsUpgrade3: 0,
   },
   upgrades: [
     {
@@ -130,5 +130,6 @@ function loadData() {
     saveState.upgrades = loadState.upgrades;
     saveState.upgradeTotalAmount = loadState.upgradeTotalAmount;
     saveState.rebirths = loadState.rebirths;
+    saveState.upgradePoints = loadState.upgradePoints;
   }
 }
