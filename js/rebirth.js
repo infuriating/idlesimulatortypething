@@ -7,6 +7,7 @@ function rebirth(rebirth) {
     rebirthEmphasis = document.getElementById("rebirth_yellow"),
     rebirthRender = document.getElementById("rebirth_updater"),
     rebirthConfirmation = document.getElementById("rebirth_modal_confirmation"),
+    upgradePointsButton = document.getElementById("rebirth_points_button");
 
   // rebirth 1 upgrades
   let clicker = document.getElementById("clicker");
@@ -47,12 +48,14 @@ function rebirth(rebirth) {
     modalh1.innerHTML = "First Rebirth";
     rebirthDiv.style.display = "none";
     clicker.style.display = "none";
+    upgradePointsButton.style.display = "none";
   } else if (saveState.rebirths.rebirth >= 1) {
     modalh1.innerHTML = "Rebirth " + saveState.rebirths.rebirth + "!";
     rebirthDiv.style.display = "block";
     rebirthRender.innerHTML = "Rebirth ";
     rebirthEmphasis.innerHTML = saveState.rebirths.rebirth;
     clicker.style.display = "block";
+    upgradePointsButton.style.display = "block";
     document.getElementById("upgrade_container6").style.display = "block";
   }
   //
