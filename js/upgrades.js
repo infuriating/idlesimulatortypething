@@ -49,6 +49,7 @@ function buyUpgrade(upgrade) {
     document.querySelectorAll(".upgrade__button")[upgrade].innerHTML =
       "Maxed out!";
     document.querySelectorAll(".upgrade__cost")[upgrade].style.display = "none";
+    saveState.upgrades[upgrade].cost = 1e500;
   }
 }
 
