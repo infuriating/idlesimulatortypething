@@ -1,7 +1,7 @@
 let clickerPopup = document.getElementById("clickerPopup");
 
 function clicker() {
-  saveState.cash += saveState.addCash / 3;
+  saveState.cash += (saveState.addCash / 3) * clickerCriticalHit;
   cashCounter();
   let createPopup = document.createElement("div");
   createPopup.classList.add("clickerPopup");
